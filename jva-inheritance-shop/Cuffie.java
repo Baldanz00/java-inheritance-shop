@@ -2,7 +2,7 @@ public class Cuffie extends Prodotto{
     private String colore;
     private boolean bluetooth;
 
-    publis Cuffie(int codice, String nome, String marca, double prezzo, double iva, String colore, boolean bluetooth) {
+    public Cuffie(int codice, String nome, String marca, double prezzo, double iva, String colore, boolean bluetooth) {
         super(codice, nome, marca, prezzo, iva);
         this.colore = colore;
         this.bluetooth = bluetooth;
