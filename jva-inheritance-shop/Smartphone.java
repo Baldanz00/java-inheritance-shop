@@ -5,9 +5,10 @@ public class Smartphone extends Prodotto{
     private int memoriaGb;
 
     //costruttore
-   public Smartphone(String imei , int memoriaGb) {
-    this.imei = imei;
-    this.memoriaGb = memoriaGb;
+   public Smartphone(int codice, String nome, String marca, double prezzo, double iva , String imei , int memoriaGb) {
+      super(codice, nome, marca, prezzo, iva);
+      this.imei = imei;
+      this.memoriaGb = memoriaGb;
    }
 
 //getter e setter
@@ -19,8 +20,9 @@ public class Smartphone extends Prodotto{
     return memoriaGb;
    }
 
+   @Override
    public String getDettagliProdotto() {
-        return getDettagliProdotto() + "IMEI: " + imei + "| Memoria: " + memoriaGb + "GB";
+        return super.getDettagliProdotto() + "IMEI: " + imei + "| Memoria: " + memoriaGb + "GB";
    
 }
 }

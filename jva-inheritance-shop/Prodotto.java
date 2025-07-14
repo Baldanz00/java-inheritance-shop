@@ -25,7 +25,7 @@ public class Prodotto {
     private double iva;
 
     //costruttore
-    public Prodotto() {
+    public Prodotto(int codice, String nome, String marca, double prezzo, double iva) {
         this.codice = codice;
         this.nome = nome;
         this.marca = marca;
@@ -60,10 +60,6 @@ public class Prodotto {
         this.nome = nome;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
     public void setPrezzo(double prezzo) {
         this.prezzo = prezzo;
     }
@@ -78,6 +74,6 @@ public class Prodotto {
     }
 
     public String getDettagliProdotto() {
-        return "Codice: " + codice + " " + marca + " " + nome + "-" + "Prezzo: € " + getPrezzoConIva();
+        return "Codice: " + codice + " " + "Marca: " + marca + " " + "Nome: " + nome + "-" + "Prezzo base: € " + prezzo + "Iva: " + iva + "%, prezzo con IVA: € " + getPrezzoConIva();
     }
 }
