@@ -7,6 +7,8 @@ public static void main(String[] args) {
     Televisori t1 = new Televisori(256847, "Samsung Oled", "Samsung", 15499.99, 22, 55, true);
     System.out.print(t1);
 
+    System.out.print(" ");
+
     Cuffie c1 = new Cuffie(569987, "Airpods", "Apple", 239.99, 22, "bianche", true);
     System.out.println(c1);
 }

@@ -16,6 +16,9 @@ public class Televisori extends Prodotto {
     public boolean isSmart() {
         return smart;
     }
+
+    @Override
+    
     public String getDettagliProdotto() {
         return getDettagliProdotto() + "Dimensioni: " + getDimensioni() + "E' smart: " + smart;
     }
