@@ -74,6 +74,6 @@ public class Prodotto {
     }
 
     public String getDettagliProdotto() {
-        return "Codice: " + codice + " " + "Marca: " + marca + " " + "Nome: " + nome + "-" + "Prezzo base: € " + prezzo + "Iva: " + iva + "%, prezzo con IVA: € " + getPrezzoConIva();
+        return "Codice: " + getCodice() + " " + "Marca: " + getMarca() + " " + "Nome: " + getNome() + "-" + "Prezzo base: € " + getPrezzo() + "Iva: " + getIva() + "%, prezzo con IVA: € " + getPrezzoConIva();
     }
 }
