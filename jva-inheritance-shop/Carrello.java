@@ -9,11 +9,36 @@
 //informazioni da stampare per ogni classe)
 
 import java.util.Scanner;
-public class Carrello extends Prodotto{
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-//nome,codice,marca,prezzo,iva
-        System.out.print("Inserisci il nome del prodotto: ");
+public class Carrello {
+    private Prodotto[] prodotti;
+    private int indiceCorrente;
+
+   //costruttore
+   
+    public Carrello(int maxProdotti) {
+        prodotti = new Prodotto[maxProdotti];
+        indiceCorrente=0;
     }
 
+    //metodo per aggiungere i prodotti
+    public void aggiungiProdotto(Prodotto p1) {
+        if(indiceCorrente < prodotti.length) {
+            prodotti[indiceCorrente] = p1;
+            indiceCorrente++;
+        } else {
+            System.out.println("Il carrello è pieno.");
+        }
+    }
+    
+    //metodo che mi stampa tutti i prodotti
+    public void stampaCarrello() {
+        System.out.println("\n contenuto del carrello: ");
+        if(indiceCorrente == 0) {
+            System.out.println("Il carrello è vuoto.");
+        } else {
+            for (int i = 0; i < indiceCorrente; i++) {
+                System.out.println("-" + prodotti[i]);
+            }
+        }
+    }
 }
