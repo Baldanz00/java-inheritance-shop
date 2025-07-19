@@ -12,7 +12,7 @@ public static void main(String[] args) {
     Cuffie c1 = new Cuffie(569987, "Airpods", "Apple", 239.99, 22, "bianche", true);
     System.out.println(c1);
 
-    Carrello carrello = new Carrello(3);
+    Carrello carrello = new Carrello(4);
     carrello.aggiungiProdotto(new Smartphone(153216, "A5", "Samsung", 950, 22, "lg45321", 256));
     carrello.aggiungiProdotto(new Televisori(535354, "Philips", "Philips", 1200, 22, 50, false));
     carrello.aggiungiProdotto(new Cuffie(135783210, "Samsung pods", "Samsung", 350, 22, "bianco", true));

@@ -19,8 +19,8 @@ public class Televisori extends Prodotto {
 
     @Override
     
-    public String getDettagliProdotto() {
-        return getDettagliProdotto() + "Dimensioni: " + getDimensioni() + "E' smart: " + smart;
+    public String toString() {
+        return super.toString() + "Dimensioni: " + getDimensioni() + "E' smart: " + smart;
     }
   
     

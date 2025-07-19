@@ -60,9 +60,6 @@ public class Prodotto {
         this.nome = nome;
     }
 
-    public void setPrezzo(double prezzo) {
-        this.prezzo = prezzo;
-    }
 
     public void setIva(double iva) {
         this.iva = iva;
@@ -73,7 +70,7 @@ public class Prodotto {
         return prezzo + (prezzo*iva/100);
     }
 
-    public String getDettagliProdotto() {
-        return "Codice: " + getCodice() + " " + "Marca: " + getMarca() + " " + "Nome: " + getNome() + "-" + "Prezzo base: € " + getPrezzo() + "Iva: " + getIva() + "%, prezzo con IVA: € " + getPrezzoConIva();
+    public String toString() {
+        return "Codice: " + codice + " "+ "Nome: " + nome  +" " + "Marca: " + marca + " " + "Prezzo base: € " + prezzo + "Iva: " + iva + "%, prezzo con IVA: € " + getPrezzoConIva();
     }
 }

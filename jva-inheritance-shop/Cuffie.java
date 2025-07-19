@@ -24,8 +24,8 @@ public class Cuffie extends Prodotto{
         this.wireless = wireless;
     }
 
-    public String getDettagliProdotto() {
-        return super.getDettagliProdotto() + ", Colore: " + getColore() + ",Tipo: Wireless: " + isWireless();
+    public String toString() {
+        return super.toString() + ", Colore: " + getColore() + ",Tipo: Wireless: " + isWireless();
     }
 
 }

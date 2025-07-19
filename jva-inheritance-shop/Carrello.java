@@ -37,7 +37,7 @@ public class Carrello {
             System.out.println("Il carrello è vuoto.");
         } else {
             for (int i = 0; i < indiceCorrente; i++) {
-                System.out.println("-" + prodotti[i]);
+                System.out.println(" " + prodotti[i]);
             }
         }
     }
